@@ -2,7 +2,7 @@
 // 3:39:13
 namespace App\Http\Controllers;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class FollowsController extends Controller
