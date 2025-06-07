@@ -4,9 +4,10 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+import './bootstrap';
 
-window.Vue = require('vue');
+import Vue from 'vue';
+window.Vue = Vue;
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +20,8 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('follow-button', require('./components/FollowButton.vue').default);
+import FollowButton from './components/FollowButton.vue';
+Vue.component('follow-button', FollowButton);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
